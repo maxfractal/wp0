@@ -1,8 +1,5 @@
 module.exports = function (grunt) {
     grunt.initConfig({
-        jshint: ['Gruntfile.js']
-    });
-    grunt.initConfig({
         less: {
             compile: {
                 files: {
@@ -13,10 +10,11 @@ module.exports = function (grunt) {
         concat: {
             js: {
                 files: {
-                    'build/assets/js/bundle.js': 'js/**/*.less'
+                    'build/assets/js/bundle.js': 'js/**/*.js'
                 }
             }
-        }
+        },
+        jshint: ['Gruntfile.js']
     });
 
     grunt.loadNpmTasks('grunt-contrib-jshint');
