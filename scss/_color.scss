@@ -1,0 +1,103 @@
+/* ------------ Base App Colors ----------------------*/
+$xred: #e74c3c;
+
+$yellow: #FFFF00;
+
+//body
+$textBlk:#2A3035;
+$textGry:#737B82;
+$bkgrndGry:#F5F5F5;
+
+//Primary
+$cogGreen:#84BD00;
+$cogOrange:#FA4616;
+
+//Secondary
+$gry2:#DBE3E8;
+$gry3:#EDF0F2;
+$gry4:#A7B7C2;
+
+
+grad1{
+  border-radius: 20px;
+  width: 70%;
+  height: 400px;
+  margin:  50 auto;
+  background: repeating-linear-gradient(
+                  45deg,
+                  yellow 0px,
+                  black 40px,
+                  yellow 40px,
+                  black 80px
+  );
+}
+
+grad2{
+  border-radius: 20px;
+  width: 70%;
+  height: 400px;
+  margin:  50 auto;
+  background: repeating-linear-gradient(
+                  45deg,
+                  yellow 0px,
+                  black 40px,
+                  black 40px,
+                  yellow 80px
+  );
+}
+
+.colorBars {
+  //border-radius: 20px;
+  width: 100%;
+  height: 400px;
+  margin:  50 auto;
+  background: repeating-linear-gradient(
+                  45deg,
+                  lawnGreen 0px,
+                  lawnGreen 40px,
+                  black 40px,
+                  rgba(37,4,39,0.5) 80px
+  );
+}
+
+.colorBars2 {
+  //border-radius: 20px;
+  width: 100%;
+  height: 400px;
+  margin:  50 auto;
+  background: repeating-linear-gradient(
+                  45deg,
+                  lawnGreen 0px,
+                  lawnGreen 40px,
+                  black 40px,
+                  rgba(37,4,39,0.5) 80px
+  );
+}
+
+.colorBarsTop {
+  //border-radius: 20px;
+  width: 100%;
+  height: 4.5em;
+  margin:  50 auto;
+  background: repeating-linear-gradient(
+                  125deg,
+                  lawnGreen 0px,
+                  lawnGreen 40px,
+                  black 40px,
+                  black 80px
+  );
+}
+
+.colorBarsBottom {
+  //border-radius: 20px;
+  width: 100%;
+  height: 4.5em;
+  margin:  50 auto;
+  background: repeating-linear-gradient(
+                  220deg,
+                  lawnGreen 0px,
+                  lawnGreen 40px,
+                  black 40px,
+                  black 80px
+  );
+}
