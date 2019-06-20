@@ -46,7 +46,15 @@ module.exports = function (grunt) {
             icons: 'build/assets/icons',
             build: 'build'
         },
+        jshint: {
+            client: [
+                'public/js/**/*.js',
+                '!public/js/vendor'
+            ]
+        }
+        /*,
         jshint: ['Gruntfile.js']
+        */
     });
 
     grunt.registerTask('js', 'Concatenate and minify static JavaScript assets',
