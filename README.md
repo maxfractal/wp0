@@ -1,5 +1,8 @@
 Project: wp0
 
+Build Instructions:
+//TODO Add build instructions
+
 
 Install:
 1. Install NPM

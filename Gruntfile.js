@@ -14,11 +14,19 @@ module.exports = function (grunt) {
                 }
             }
         },
+        sass: {
+            compile: {
+                files: {
+                    'build/assets/css/style.css': 'scss/**/*.scss'
+                }
+            }
+        },
         jshint: ['Gruntfile.js']
     });
 
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-concat');
+    grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.registerTask('default', ['jshint']); // register a default task alias
 };
