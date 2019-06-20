@@ -3,28 +3,28 @@ module.exports = function (grunt) {
         less: {
             compile: {
                 files: {
-                    'build/assets/css/compiled.css': 'less/**/*.less'
+                    'build/assets/css/compiled.css': 'public/less/**/*.less'
                 }
             }
         },
         concat: {
             js: {
                 files: {
-                    'build/assets/js/bundle.js': 'js/**/*.js'
+                    'build/assets/js/bundle.js': 'public/js/**/*.js'
                 }
             }
         },
         sass: {
             compile: {
                 files: {
-                    'build/assets/css/style.css': 'scss/base.scss'
+                    'build/assets/css/style.css': 'public/scss/base.scss'
                 }
             }
         },
         uglify: {
             cobra: {
                 files: {
-                    'build/assets/js/cobra.min.js': 'js/cobra.js'
+                    'build/assets/js/cobra.min.js': 'public/js/cobra.js'
                 }
             },
             bundle: {
@@ -33,9 +33,9 @@ module.exports = function (grunt) {
                 }
             }
         },
-        sprites: {
+        sprite: {
             icons: {
-                src: 'public/assets/img/icons/*.png',
+                src: 'public/img/icons/*.png',
                 destImg: 'build/assets/img/icons.png',
                 destCSS: 'build/assets/css/icons.css'
             }
