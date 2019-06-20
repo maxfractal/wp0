@@ -33,6 +33,18 @@ module.exports = function (grunt) {
                 }
             }
         },
+        sprites: {
+            icons: {
+                src: 'public/assets/img/icons/*.png',
+                destImg: 'build/assets/img/icons.png',
+                destCSS: 'build/assets/css/icons.css'
+            }
+        },
+        clean: {
+            js: 'build/assets/js/**',
+            css: 'build/assets/css',
+            icons: 'build/assets/icons'
+        },
         jshint: ['Gruntfile.js']
     });
 
@@ -44,5 +56,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-spritesmith');
+    grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.registerTask('default', ['jshint']); // register a default task alias
 };

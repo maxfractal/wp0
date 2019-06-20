@@ -12,6 +12,8 @@ Install:
 4. npm install grunt-contrib-concat --save-dev
 5. npm install grunt-contrib-sass --save-dev
 6. npm install grunt-contrib-uglify --save-dev
+7. npm install grunt-contrib-clean --save-dev
+
 
 
 Grunt commands:
