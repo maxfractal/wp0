@@ -17,7 +17,7 @@ module.exports = function (grunt) {
         sass: {
             compile: {
                 files: {
-                    'build/assets/css/style.css': 'scss/**/*.scss'
+                    'build/assets/css/style.css': 'scss/base.scss'
                 }
             }
         },
@@ -43,7 +43,8 @@ module.exports = function (grunt) {
         clean: {
             js: 'build/assets/js/**',
             css: 'build/assets/css',
-            icons: 'build/assets/icons'
+            icons: 'build/assets/icons',
+            build: 'build'
         },
         jshint: ['Gruntfile.js']
     });
