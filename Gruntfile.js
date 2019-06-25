@@ -60,6 +60,15 @@ module.exports = function (grunt) {
     grunt.registerTask('js', 'Concatenate and minify static JavaScript assets',
         ['concat:js', 'uglify:bundle']);
 
+    grunt.registerTask('timestamp', function() {
+        var options = this.options({
+            file: '.timestamp'
+        });
+        var timestamp = +new Date();
+        var contents = timestamp.toString();
+        grunt.file.write(options.file, contents);
+    });
+
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-concat');
