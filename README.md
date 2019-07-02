@@ -6,6 +6,8 @@ Build Instructions:
 
 Install:
 1. Install NPM
+    Updating NPM
+    npm install -g npm@latest
 2. npm install --save-dev grunt-contrib-jshint
 3. npm install grunt-contrib-less --save-dev
 #grunt-contrib-concat
